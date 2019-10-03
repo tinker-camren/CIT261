@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0">
+  <PropertyGroup>
+    <RootNamespace>WebAppSample</RootNamespace>
+    <ProjectGuid>{973439A3-1602-44B8-ADBD-AED390E707A2}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\scrolling-nav.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Example6.html" />
+    <Content Include="Example5.html" />
+    <Content Include="Example4.html" />
+    <Content Include="Example3.html" />
+    <Content Include="Example2.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\example1.js" />
+    <Content Include="Example1.html" />
+    <Content Include="template.html" />
+    <Content Include="Scripts\scrolling-nav.js" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+  </ItemGroup>
+</Project>

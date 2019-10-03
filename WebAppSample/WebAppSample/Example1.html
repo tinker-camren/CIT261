@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CIT 261 website">
+    <meta name="author" content="Camren Tinker">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="Content/scrolling-nav.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example1.html">Example1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example2.html">Example2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example3.html">Example3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example4.html">Example4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example5.html">Example5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example6.html">Example6</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white">
+        <div class="container flex-row">
+            <h1 class="text-center">Example1</h1>
+            <p class="lead text-center">This example showcases the following code topics:</p>
+            <ul class="custom-header">
+                <li>1. Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</li>
+                <li>2. Object Creation Functions, Inheritance, Properties, Methods, Instantiation (WIP)</li>
+            </ul>
+        </div>
+    </header>
+    <section id="topic1">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>Arrays and Loops:</h2>
+                    <button onclick="hideShow('arrayLoopDiv'); loopArray()" id="loopArray" class="btn-info">Click For Example</button>
+                    <div id="arrayLoopDiv" style="display:none"></div>
+                </div>
+                <div class="mx-auto p-2">
+                    <h2>Associative Array:</h2>
+                    <button onclick="hideShow('assocArrayDiv'); assocArray()" id="assocArray" class="btn-info">Click For Example</button>
+                    <div id="assocArrayDiv" style="display:none"></div>
+                </div>
+                <div class="mx-auto p-2 pl-4">
+                    <h2>Conditional Statement:</h2>
+                    <button onclick="hideShow('condStatementDiv');" class="btn-info">Click For Example</button>
+                    <div id="condStatementDiv" style="display:none">
+                        <form onsubmit="condStatement()">
+                            Enter username (minimum 6 chars): <input type="text" id="uname" name="uname">
+                            <input type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic1');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic1" style="display:none">
+                <p class="text-body">
+                    Arrays, loops, functions, variables, parameters, and conditional statements are the basic building blocks of any
+                    programming language, at least that I know of. These are essential to the building of any software, whether they be an operating system,
+                    a game, an EHR for a hospital, or a mobile app for a bank.
+                </p>
+                <p class="text-body">
+                    These three examples above showcase some very basic functionality for each of the topics hitherto mentioned. 
+                    There are basic functions, loops, arrays, etc contained within the three examples. Clicking the buttons is a 
+                    surprisingly large let-down, as you can't really see what's going on behind the scenes in the code.
+                    Therefore, feel free to peruse any of the following links to learn what I did, or to look at my code
+                    in my github repository!
+                </p>
+                <ul>
+                    <li><a href=""</li>
+                </ul>
+            </div>
+</section>
+    <section id="topic2" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>Object Creation</h2>
+                    <button onclick="hideShow('objCreationDiv');" class="btn-info">Click For Example</button>
+                    <div id="objCreationDiv" style="display:none">
+                        <button onclick="hideShow('objInit'); objInit()" class="btn-info row">Object Initialization</button>
+                        <div id="objInit" style="display:none">
+
+                        </div>
+                        <button onclick="hideShow('objInst'); objInst()"  class="btn-info row">Object Instantiation</button>
+                        <div id="objInst" style="display:none">
+
+                        </div>
+                        <button onclick="hideShow('objInherit'); objInherit()" class="btn-info row">Creating with Inheritance</button>
+                        <div id="objInherit" style="display:none">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto p-2">
+                    <h2>Associative Array:</h2>
+                    <button onclick="hideShow('assocArrayDiv'); assocArray()" id="assocArray" class="btn-info">Click For Example</button>
+                    <div id="assocArrayDiv" style="display:none"></div>
+                </div>
+                <div class="mx-auto p-2 pl-4">
+                    <h2>Conditional Statement:</h2>
+                    <button onclick="hideShow('condStatementDiv');" class="btn-info">Click For Example</button>
+                    <div id="condStatementDiv" style="display:none">
+                        <form onsubmit="condStatement()">
+                            Enter username (minimum 6 chars): <input type="text" id="uname" name="uname">
+                            <input type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="row text-center p-3 py-3 mx-auto" id="showInfoTopic2">
+                    <button onclick="hideShow('showInfoTopic2');" class="btn-info">Click For Example</button>
+                </div>
+            </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Camren Tinker - CIT261</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/scrolling-nav.js"></script>
+
+    <!-- javascript code for this example -->
+    <script src="Scripts/example1.js"></script>
+</body>
+</html>
+
