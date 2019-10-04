@@ -53,6 +53,7 @@
             <ul class="custom-header">
                 <li>1. Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</li>
                 <li>2. Object Creation Functions, Inheritance, Properties, Methods, Instantiation (WIP)</li>
+                <li>3. JSON Parse, Stringify</li>
             </ul>
         </div>
     </header>
@@ -88,8 +89,8 @@
                     a game, an EHR for a hospital, or a mobile app for a bank.
                 </p>
                 <p class="text-body">
-                    These three examples above showcase some very basic functionality for each of the topics hitherto mentioned. 
-                    There are basic functions, loops, arrays, etc contained within the three examples. Clicking the buttons is a 
+                    These three examples above showcase some very basic functionality for each of the topics hitherto mentioned.
+                    There are basic functions, loops, arrays, etc contained within the three examples. Clicking the buttons is a
                     surprisingly large let-down, as you can't really see what's going on behind the scenes in the code.
                     Therefore, feel free to peruse any of the following links to learn what I did, or to look at my code
                     in my github repository!
@@ -100,7 +101,8 @@
                     <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js</a></li>
                 </ul>
             </div>
-</section>
+        </div>
+    </section>
     <section id="topic2" class="bg-light">
         <div class="container">
             <div class="row">
@@ -121,7 +123,7 @@
 
                         </div>
                     </div>
-                </div>               
+                </div>
             </div>
             <button onclick="hideShow('showInfoTopic2');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
             <div class="row p-3 py-3 mx-auto" id="showInfoTopic2" style="display:none">
@@ -139,7 +141,7 @@
                 </p>
                 <p class="text-body">
                     I also have a few examples of methods (also called functions) here. I can include more if needed. There are a few different creation methods, as well
-                    as a method that returns all the info from an object. You can see how all the code works behind the scenes by checking out my javascript code in my repo 
+                    as a method that returns all the info from an object. You can see how all the code works behind the scenes by checking out my javascript code in my repo
                     (link below), or learn from the same sources that I learned from by perusing the other links below!
                 </p>
                 <ul>
@@ -151,7 +153,34 @@
                     <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js</a></li>
                 </ul>
             </div>
-</section>
+        </div>
+    </section>
+    <section id="topic3">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>JSON Stringify and Parse:</h2>
+                    <button onclick="hideShow('jsonExample'); jsonExample()" class="btn-info mx-auto">Click For Example</button>
+                    <div id="jsonExample" style="display:none">test</div>
+                </div>           
+            </div>
+            <button onclick="hideShow('showInfoTopic3');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic3" style="display:none">
+                <p class="text-body">
+                    The JSON Stringify and Parse methods are extremely helpful when relaying data from an app to a server and vice versa. Servers don't particularly like
+                    when you send javascript objects to them, so the JSON stringify method was created to rectify that situation. It converts an object into a string.
+                    The server can then use the JSON Parse method to convert that string back into an object if needed. It also lets the server send strings to 
+                    the application, which can use the Parse method to convert that string into an object. It makes data transfer between an application and
+                    a server streamlined and incredibly easy to do. 
+                </p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/js/js_json_parse.asp">https://www.w3schools.com/js/js_json_parse.asp</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_json_stringify.asp">https://www.w3schools.com/js/js_json_stringify.asp</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">

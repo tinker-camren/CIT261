@@ -127,6 +127,7 @@ function objInst() {
     element.innerHTML = outstring;
 }
 
+//Demonstrate how inheritance can work
 function objInherit() {
     var element = document.getElementById('objInherit');
     var outstring = "<h5>Computer Parts List:</h5>";
@@ -138,11 +139,12 @@ function objInherit() {
         "Patriot Sniper X 16GB (2x8 GB)",
         "EVGA nVidia RTX 2060",
         "Samsung EVO m.2 500GB"
-    )
+    );
     //Create a new computerParts object that inherits from the old one
     var computerPartsInherit = Object.create(computerParts);
 
-    //Add a new method to the inherited object
+    //Add a new method to the inherited object to create a string from properties
+    //that it inherited
     computerPartsInherit.BuildList = function () {
         var output = "";
         output += this.mobo + "<br>";
@@ -157,6 +159,68 @@ function objInherit() {
     };
 
     outstring += computerPartsInherit.BuildList();
+
+    element.innerHTML = outstring;
+}
+
+//Demonstrate JSON Stringify and Parse
+function jsonExample() {
+    var element = document.getElementById('jsonExample');
+    var objString = "<h5>Computer Parts List (Starting Object):</h5>";
+    var arrString = "<h5>Computer Parts List (Starting Array):</h5>";
+    var stringifyObjString = "<h5>Computer Parts List (Stringified Object):</h5>";
+    var stringifyArrString = "<h5>Computer Parts List (Stringified Array):</h5>";
+    var parseObjString = "<h5>Computer Parts List (Parsed Object):</h5>";
+    var parseArrString = "<h5>Computer Parts List (Parsed Array):</h5>";
+    var outstring = "<h5>Stringified Example:</h5>"
+    var computerPartsObj = new ComputerParts(
+        "MSI X470 Pro",
+        "CM Storm Stryker",
+        "Rosewill 800W Gold",
+        "AMD Ryzen 2700x",
+        "Patriot Sniper X 16GB (2x8 GB)",
+        "EVGA nVidia RTX 2060",
+        "Samsung EVO m.2 500GB"
+    );
+
+    var computerPartsArr = new Array();
+    computerPartsArr[0] = "motherboard";
+    computerPartsArr[1] = "case";
+    computerPartsArr[2] = "PSU";
+    computerPartsArr[3] = "processor";
+    computerPartsArr[4] = "RAM";
+    computerPartsArr[5] = "video card";
+    computerPartsArr[6] = "hard drive";
+
+    //Stringify an object
+    var stringifyComputerPartsObj = JSON.stringify(computerPartsObj);
+
+    //Stringify an array
+    var stringifyComputerPartsArr = JSON.stringify(computerPartsArr);
+
+    //Parse the object
+    var parseComputerPartsObj = JSON.parse(stringifyComputerPartsObj);
+
+    //Parse the array
+    var parseComputerPartsArr = JSON.parse(stringifyComputerPartsArr);
+
+    //Getting all the data ready to be output
+    //Using these loops so that when these displays in the HTML, it doesn't just show 'Object'
+    for (var i in computerPartsObj) {
+        objString += computerPartsObj[i] + "<br>";
+    };
+    for (var i in parseComputerPartsObj) {
+        parseObjString += parseComputerPartsObj[i] + "<br>";
+    };
+
+    //The rest of this can just be slapped together
+    arrString += computerPartsArr;
+    stringifyObjString += stringifyComputerPartsObj;
+    stringifyArrString += stringifyComputerPartsArr;
+    parseArrString += parseComputerPartsArr;
+
+    //The final long string that will be output
+    outstring += objString + arrString + stringifyArrString + stringifyObjString + parseObjString + parseArrString;
 
     element.innerHTML = outstring;
 }
