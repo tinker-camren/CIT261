@@ -51,16 +51,34 @@
             <h1>Example2</h1>
             <p class="lead">This example showcases the following code topics:</p>
             <ul>
-                <li>Not currently showcasing anything</li>
+                <li>
+                    4. Using XMLHTTPRequest to Consume a JSON Web Service
+                </li>
             </ul>
         </div>
     </header>
-    <section id="about">
+    <section id="topic1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Body Content</h2>                    
+                <div class="mx-auto p-2">
+                    <h2>XMLHTTPRequest</h2>
+                    <button onclick="hideShow('xmlHttpExample'); xmlHttpExample()" class="btn-info">Click For Example</button>
+                    <div id="xmlHttpExample" style="display:none"></div>
                 </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic1');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic1" style="display:none">
+                <p class="text-body">
+                    
+                </p>
+                <p class="text-body">
+                    
+                </p>
+                <ul>
+                    <li><a href="https://webcheatsheet.com/javascript/arrays.php">https://webcheatsheet.com/javascript/arrays.php</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_arrays.asp">https://www.w3schools.com/js/js_arrays.asp</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js</a></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -76,7 +94,7 @@
     <script src="Scripts/bootstrap.js"></script>
 
     <script src="Scripts/scrolling-nav.js"></script>
-    <script src="Scripts/example1.js"></script>
+    <script src="Scripts/example2.js"></script>
 </body>
 </html>
 
