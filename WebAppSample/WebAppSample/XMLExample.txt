@@ -7,7 +7,7 @@
 "RAM":"Patriot Sniper X 16GB (2x8 GB)",
 "vidcard":"EVGA nVidia RTX 2060",
 "hdd":"Samsung EVO m.2 500GB"
-}
+},
 {
 "mobo":"ASUS x570",
 "Case":"Rosewill",
@@ -16,7 +16,7 @@
 "RAM":"GSkill Ripjaws 32GB (2x16 GB)",
 "vidcard":"EVGA nVidia RTX 2080TI",
 "hdd":"Samsung EVO m.2 2TB"
-}
+},
 {
 "mobo":"GIGABYTE B450M",
 "Case":"Corsair Crystal Series",

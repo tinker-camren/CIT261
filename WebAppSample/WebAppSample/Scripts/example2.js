@@ -9,27 +9,26 @@ function hideShow(elementID) {
 }
 
 function xmlHttpExample() {
+    var element = document.getElementById('xmlHttpExample');
+    var outstring = "<h5>Computer Parts List:</h5>";
+    var xmlhttp = new XMLHttpRequest();
+    var ObjArray = "https://raw.githubusercontent.com/tinker-camren/CIT261/master/WebAppSample/WebAppSample/XMLExample.txt";
 
-    //element.innerHTML = outstring;
-}
-
-var element = document.getElementById('xmlHttpExample');
-var outstring = "<h5>Computer Parts List:</h5>";
-var xmlhttp = new XMLHttpRequest();
-var ObjArray = "XMLExample.txt";
-
-xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
+    xmlhttp.onreadystatechange = function () {        
         var ExampleArray = JSON.parse(this.responseText);
-        convertObjToText(ExampleArray);
-    }
-};
-xmlhttp.open("GET", ObjArray, true);
-xmlhttp.send();
+        element.innerHTML = ExampleArray;
+        convertObjToText(ExampleArray);        
+    };
+    xmlhttp.open("GET", ObjArray, true);
+    xmlhttp.send();
+
+    //
+}
 
 function convertObjToText(ObjArray) {
     var outstring = "";
-    for (var i = 0; i < ObjArray.length; i++) {
+    var i;
+    for (i = 0; i < ObjArray.length; i++) {
         outstring += '<li>' + ObjArray[i].mobo + '</li>' +
             '<li>' + ObjArray[i].case + '</li>' +
             '<li>' + ObjArray[i].PSU + '</li>' +
@@ -38,5 +37,5 @@ function convertObjToText(ObjArray) {
             '<li>' + ObjArray[i].vidcard + '</li>' +
             '<li>' + ObjArray[i].hdd + '</li>';
     }
-    document.getElementById("xmlHttpExample").innerHTML= outstring;
+    document.getElementById("xmlHttpExample").innerHTML = outstring;
 }
