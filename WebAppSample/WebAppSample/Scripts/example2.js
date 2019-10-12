@@ -16,7 +16,7 @@ function xmlHttpExample() {
 
     xmlhttp.onreadystatechange = function () {        
         var ExampleArray = JSON.parse(this.responseText);
-        element.innerHTML = ExampleArray;
+        element.innerHTML = this.responseText;
         convertObjToText(ExampleArray);        
     };
     xmlhttp.open("GET", ObjArray, true);
