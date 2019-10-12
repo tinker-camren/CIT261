@@ -1,29 +1,29 @@
 ﻿[
 {
-"mobo":"MSI X470 Pro",
-"Case":"CM Storm Stryker",
-"PSU":"Rosewill 800W Gold",
-"CPU":"AMD Ryzen 2700x",
-"RAM":"Patriot Sniper X 16GB (2x8 GB)",
-"vidcard":"EVGA nVidia RTX 2060",
-"hdd":"Samsung EVO m.2 500GB"
+"mobo": "MSI X470 Pro",
+"Case": "CM Storm Stryker",
+"PSU": "Rosewill 800W Gold",
+"CPU": "AMD Ryzen 2700x",
+"RAM": "Patriot Sniper X 16GB (2x8 GB)",
+"vidcard": "EVGA nVidia RTX 2060",
+"hdd": "Samsung EVO m.2 500GB"
 },
 {
-"mobo":"ASUS x570",
-"Case":"Rosewill",
-"PSU":"EVGA 800W Silver",
-"CPU":"AMD Ryzen 3900X",
-"RAM":"GSkill Ripjaws 32GB (2x16 GB)",
-"vidcard":"EVGA nVidia RTX 2080TI",
-"hdd":"Samsung EVO m.2 2TB"
+"mobo": "ASUS x570",
+"Case": "Rosewill",
+"PSU": "EVGA 800W Silver",
+"CPU": "AMD Ryzen 3900X",
+"RAM": "GSkill Ripjaws 32GB (2x16 GB)",
+"vidcard": "EVGA nVidia RTX 2080TI",
+"hdd": "Samsung EVO m.2 2TB"
 },
 {
-"mobo":"GIGABYTE B450M",
-"Case":"Corsair Crystal Series",
-"PSU":"EVGA 1000W Gold",
-"CPU":"AMD Threadripper 2950X",
-"RAM":"GSkill Ripjaws 64GB (4x16 GB)",
-"vidcard":"EVGA nVidia RTX 2080TI X2",
-"hdd":"Samsung EVO m.2 2TB"
+"mobo": "GIGABYTE B450M",
+"Case": "Corsair Crystal Series",
+"PSU": "EVGA 1000W Gold",
+"CPU": "AMD Threadripper 2950X",
+"RAM": "GSkill Ripjaws 64GB (4x16 GB)",
+"vidcard": "EVGA nVidia RTX 2080TI X2",
+"hdd": "Samsung EVO m.2 2TB"
 }
 ]
