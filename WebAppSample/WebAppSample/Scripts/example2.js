@@ -9,8 +9,6 @@ function hideShow(elementID) {
 }
 
 function xmlHttpExample() {
-    var element = document.getElementById('xmlHttpExample');
-    var outstring = "<h5>Computer Parts List:</h5>";
     var xmlhttp = new XMLHttpRequest();
     var ObjArray = "https://raw.githubusercontent.com/tinker-camren/CIT261/master/WebAppSample/WebAppSample/XMLExample.txt";
 
