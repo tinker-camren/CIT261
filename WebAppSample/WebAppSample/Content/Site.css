@@ -34,3 +34,11 @@ textarea {
         padding: 0;
     }
 }
+
+/* Random CSS for Examples */
+#CSSManipExample2 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid blue;
+    border-radius: 0%;
+}

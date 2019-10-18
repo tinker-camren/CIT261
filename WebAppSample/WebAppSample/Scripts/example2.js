@@ -14,13 +14,10 @@ function xmlHttpExample() {
 
     xmlhttp.onreadystatechange = function () {        
         var ExampleArray = JSON.parse(this.responseText);
-        //element.innerHTML = this.responseText;
         convertObjToText(ExampleArray);        
     };
     xmlhttp.open("GET", ObjArray, true);
     xmlhttp.send();
-
-    //
 }
 
 function convertObjToText(ObjArray) {
@@ -36,4 +33,20 @@ function convertObjToText(ObjArray) {
             '<li> Hard Drive: ' + ObjArray[i].hdd + '</li><br>';
     }
     document.getElementById("xmlHttpExample").innerHTML = outstring;
+}
+
+function CSSManipExample() {
+    element = document.getElementById('CSSManipExample2');
+
+    if (element.style.borderRadius != "50%") {
+        element.style.borderRadius = '50%';
+        element.style.display = 'flex';
+        element.style.justifyContent = 'center';
+        element.style.alignItems = 'center';
+    } else {
+        element.style.borderRadius = '0%';
+        element.style.justifyContent = 'start';
+        element.style.alignItems = 'start';
+    }
+    
 }
