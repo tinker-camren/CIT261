@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="Content/scrolling-nav.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example1.html">Example1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example2.html">Example2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example3.html">Example3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example4.html">Example4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example5.html">Example5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example6.html">Example6</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white">
+        <div class="container flex-row">
+            <h1 class="text-center">Example1</h1>
+            <p class="lead text-center">This example showcases the following code topics:</p>
+            <ul class="custom-header">
+                <li>4. Using XMLHTTPRequest to Consume a JSON Web Service</li>
+                <li>7. Manipulating CSS Class Properties Using JavaScript.</li>
+                <li>5. Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects.</li>
+            </ul>
+        </div>
+    </header>
+    <section id="topic1">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>XMLHTTPRequest</h2>
+                    <button onclick="hideShow('xmlHttpExample'); xmlHttpExample()" class="btn-info">Click For Example</button>
+                    <ul id="xmlHttpExample" style="display:none"></ul>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic1');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic1" style="display:none">
+                <p class="text-body">
+                    XMLHTTPRequest is an object from a library in Javascript that makes it possible to exchange data between a web site and a server. The fact that it has XML in it's name
+                    can be a little misleading. I'm not using it to get XML data at all. I actually just exported a javascript object array to a text file, and I'm having it read in that text file from my
+                    github site. So long as the site responds that it's available, it'll pull the data from that page, parse it, and then I have a loop set up to spit out the information from the page. It's a really
+                    simple example, but it showcases one possible use for this functionality. It's also used to check progress on uploads, update web pages without needing to reload them, send data to a server in the
+                    background, and tons of other things.
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/xml/xml_http.asp">https://www.w3schools.com/xml/xml_http.asp</a></li>
+                    <li><a href="https://javascript.info/xmlhttprequest">https://javascript.info/xmlhttprequest</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_json_http.asp">https://www.w3schools.com/js/js_json_http.asp</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example2.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example2.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="topic2" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>Manipulating CSS with JavaScript</h2>
+                    <button onclick="hideShow('CSSManipExample1')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="CSSManipExample1" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+                        <button onclick="CSSManipExample()" class="btn-info">Click To Change</button>
+                        <div id="CSSManipExample2" class="row mx-auto mt-3">Div</div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic2');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic2" style="display:none">
+                <p class="text-body">
+                    Manipulating CSS Class properties with Javascript is actually pretty simple. There are a few key things to remember when you're doing so however.
+                    In CSS, properties that are more than a single word are connected using a dash, such as 'border-radius'. when you're manipulating that property using
+                    javascript, the format is changed to camel case. So to change the border-radius using javascript, it would be referenced as borderRadius instead in the JS code
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href="https://webplatform.github.io/docs/tutorials/manipulating_css_with_javascript/">https://webplatform.github.io/docs/tutorials/manipulating_css_with_javascript/</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_htmldom_css.asp">https://www.w3schools.com/js/js_htmldom_css.asp</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information">https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example2.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example2.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="topic3">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>Web Storage API</h2>
+                    <button onclick="hideShow('WebStorageExample')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="WebStorageExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+                        <button onclick="LocalStorageAdd('computerParts',computerParts)" class="btn-info row mx-auto">Click to Add Object to Local Storage</button>
+                        <button onclick="LocalStorageRemove('computerParts')" class="btn-info row mx-auto">Click to Remove Object from Local Storage</button>
+                        <button onclick="SessionStorageAdd('computerParts', computerParts)" class="btn-info row mx-auto">Click to Add Object to Session Storage</button>
+                        <button onclick="SessionStorageRemove('computerParts')" class="btn-info row mx-auto">Click to Remove Object from Session Storage</button>
+                        <button onclick="LocalStorageView('computerParts')" class="btn-info row mx-auto">Click to View Item in Local Storage</button>
+                        <button onclick="SessionStorageView('computerParts')" class="btn-info row mx-auto">Click to View Item in Session Storage</button>
+                        <div id="WebStorageDiv" class="row mx-auto mt-3">div</div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic3');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic3" style="display:none">
+                <p class="text-body">
+                    The Web Storage API is a dictionary of sorts, where you are able to store key/value pairs on the local computer. The Session Storage part of this will only store information until
+                    that web page is closed. The Local Storage part of it will store information until that information is cleared out. I'm not 100% sure what all will clear it out, but it sounds like a 
+                    reboot will clear it out. I'm sure clearing your temporary internet files will also clear that out.
+                </p>
+                <p class="text-body">
+                    The key/value pair can contain many different data types. The key is generally a string from what I understand, but the value for that key can be anything. In my example I'm creating a custom
+                    object in JS, populating it with values, and then storing that object. You can do the same with arrays, integers, floats, etc. 
+                </p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API">https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example2.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example2.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Camren Tinker - CIT261</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/scrolling-nav.js"></script>
+    <script src="Scripts/example1.js"></script>
+    <script src="Scripts/example2.js"></script>
+</body>
+</html>
+

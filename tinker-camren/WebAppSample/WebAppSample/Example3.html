@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="Content/scrolling-nav.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example1.html">Example1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example2.html">Example2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example3.html">Example3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example4.html">Example4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example5.html">Example5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Example6.html">Example6</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white">
+        <div class="container flex-row">
+            <h1 class="text-center">Example1</h1>
+            <p class="lead text-center">This example showcases the following code topics:</p>
+            <ul class="custom-header">
+                <li>6. DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.</li>
+                <li>8. Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript.</li>
+                <li>10. HTML5 Tags - Video, Audio, and Canvas.</li>
+            </ul>
+        </div>
+    </header>
+    <section id="topic1" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>DOM Manipulation</h2>
+                    <button onclick="hideShow('DomManipExample'), appendChildExample()" class="btn-info row mx-auto">Create/Append Example</button>
+                    <div id="DomManipExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+                        <div id="DomManipExampleDiv" class="row mx-auto mt-3"></div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic1');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic1" style="display:none">
+                <p class="text-body">
+                    The DOM (Document Object Model) is a Javascript model that encompasses the entire document structure of the webpage. One of the most common things that web developers do is
+                    manipulate the DOM in some way. The DOM is the actual webpage that's display in the window of the web browser. Each HTML element in the HTML code of the document represents a node
+                    in the DOM. You can manipulate each of these nodes in the DOM, just as you would if you were rewriting the HTML code. Using the DOM in JavaScript, you can create new elements, select
+                    existing elements and edit what's inside of them, edit their styling, append new info, and many other things. 
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href="">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents</a>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents</li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="topic2">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>CSS3 Transitions and Animations - Javascript</h2>
+                    <button onclick="hideShow('JsCssExample')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="JsCssExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+                        <div id="JsCssExampleDiv" class="row mx-auto mt-3"></div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic2');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic2" style="display:none">
+                <p class="text-body">
+                    CSS Transitions allow you to change properties of a tag or element smoothly. They help transition formatting of an element from one view to another. These can be done using purely CSS,
+                    which will be shown in the next set of examples. These ones are triggered using JavaScript.
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href="https://www.w3schools.com/css/css3_transitions.asp"https://www.w3schools.com/css/css3_transitions.asp></a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="topic3" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto p-2">
+                    <h2>HTML5 Tags</h2>
+                    <button onclick="hideShow('HtmlTagsExample')" class="btn-info row mx-auto">Click For Example</button>
+                    <div id="HtmlTagsExample" style="display:none" class="row mx-auto mt-2 text-center justify-content-center">
+                        <div id="HtmlTagsExampleDiv" class="row mx-auto mt-3"></div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="hideShow('showInfoTopic3');" class="btn-info row text-center p-3 mx-auto mt-5">Show More Info</button>
+            <div class="row p-3 py-3 mx-auto" id="showInfoTopic3" style="display:none">
+                <p class="text-body">
+                    
+                </p>
+                <p class="text-body">
+
+                </p>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href="https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js">https://github.com/tinker-camren/CIT261/blob/master/WebAppSample/WebAppSample/Scripts/example1.js</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Camren Tinker - CIT261</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/scrolling-nav.js"></script>
+    <script src="Scripts/example1.js"></script>
+    <script src="Scripts/example2.js"></script>
+    <script src="Scripts/example3.js"></script>
+</body>
+</html>
+
